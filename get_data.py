@@ -8,4 +8,6 @@ mydb = mysql.connector.connect(
 
 print(mydb.is_connected())
 myCursor = mydb.cursor()
-myCursor.execute("create table gktech.student_details(studentID int,firstname varchar(30),lastname varchar(30),registrationdate date,team varchar(30))")
+myCursor.execute("select * from gktech.student_details")
+for i in myCursor:
+    print(i)
