@@ -63,3 +63,12 @@ myCursor.execute("SELECT COUNT(*),team FROM gktech.student_details GROUP BY team
 for i in myCursor:
     print(i)
 
+
+# drop table
+print("__________8th Query Response__________")
+myCursor.execute("drop table gktech.details")
+
+# drop database
+print("__________9th Query Response__________")
+myCursor.execute("drop database gktechs")
+
