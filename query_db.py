@@ -37,3 +37,29 @@ print("__________fifth Query Response__________")
 myCursor.execute("select * from gktech.student_details where studentID < 125 and firstname = 'kalyan'")
 for i in myCursor:
     print(i)
+
+# Mininimum
+print("__________6th Query Response__________")
+myCursor.execute("select min(studentID)from gktech.student_details")
+for i in myCursor:
+    print(i)
+
+# Maximum
+print("__________6th Query Response__________")
+myCursor.execute("select max(studentID)from gktech.student_details")
+for i in myCursor:
+    print(i)
+
+# Count of the records in the data base
+print("__________6th Query Response__________")
+myCursor.execute("select count(*) from gktech.student_details")
+for i in myCursor:
+    print(i)
+
+
+# group by
+print("__________7th Query Response__________")
+myCursor.execute("SELECT COUNT(*),team FROM gktech.student_details GROUP BY team")
+for i in myCursor:
+    print(i)
+
