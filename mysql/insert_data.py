@@ -12,3 +12,5 @@ myCursor.execute("insert into gktech.student_details values(123,'kalyan','gorjan
 # need to commit the while change or modify the data in the database
 # if you get error in the query string then add triple quotes to the string.
 mydb.commit()
+
+
